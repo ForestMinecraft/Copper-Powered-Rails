@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "copper_rails",
+	"version": "1.0",
+	"name": "Copper Powered Rails",
+	"description": "Changes powered rails to be made from copper.",
+	"authors": [
+		"Forest, @forest_mc on Youtube and Discord."
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/project/copper-powered-rails",
+		"sources": "https://github.com/ForestMinecraft/Copper-Powered-Rails"
+	},
+	"license": "MIT",
+	"icon": "assets/copper_rails/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.forest.copper_rails.CopperPoweredRails"
+		],
+		"fabric-datagen": [
+			"net.forest.copper_rails.CopperPoweredRailsDataGenerator"
+		]
+	},
+	"mixins": [
+		"copper_rails.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.0",
+		"minecraft": "~1.20",
+		"java": ">=17"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
